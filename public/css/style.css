@@ -76,11 +76,13 @@ img{
 /* MENU MOBILE */
 .nav__mobile,
 .nav__mobile input,
-.menu__mobile{
+.menu__mobile,
+.nav__mobile--pages input{
     display: none;
     text-align: center;
 }
-.nav__mobile input:checked ~ ul{
+.nav__mobile input:checked ~ ul,
+.nav__mobile--pages input:checked ~ ul{
     display: block;
 }
 .nav__index ul{
@@ -111,7 +113,8 @@ img{
     margin-right: 15rem;
 }
 .header__socials i,
-.nav__mobile label i{
+.nav__mobile label i,
+.nav__mobile--pages label i{
     font-size: 2.3em;
     padding: .9rem;
     color: var(--secondary);
@@ -535,7 +538,7 @@ footer{
         display: none;
     }
     .nav__mobile--pages{
-        display: flex;
+        display: block;
         justify-content: space-between;
         padding: 0 3rem;
         align-items: center;
@@ -547,6 +550,11 @@ footer{
         font-size: 2.3em;
         padding: .9rem;
         color: var(--secondary);
+    }
+    .nav__mobile--pages label{
+        position: relative;
+        top: -2.5rem;
+        left: 55%;
     }
 }
 
