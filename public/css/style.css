@@ -119,6 +119,30 @@ img{
     padding: .9rem;
     color: var(--secondary);
 }
+.header__socials .fa-instagram{
+    animation-name: crazyicon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 2.5s;
+}
+.header__socials .fa-facebook-f{
+    animation-name: crazyicon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+}
+.header__socials .fa-twitter{
+    animation-name: crazyicon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 3.5s;
+}
+.header__socials .fa-whatsapp{
+    animation-name: crazyicon;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+}
 .header__socials i:hover{
     transform: scale(1.5);
 }
@@ -582,5 +606,32 @@ footer{
     }
     to {
         transform: translateY(10px)
+    }
+}
+@keyframes crazyicon{
+    0%{
+        transform: rotate(-150deg);
+        position: relative;
+        left: 100px;
+    }
+    25%{
+        transform: rotate(-200deg);
+        position: relative;
+        left: 75px;
+    }
+    50%{
+        transform: rotate(-250deg);
+        position: relative;
+        left: 50px;
+    }
+    75%{
+        transform: rotate(-300deg);
+        position: relative;
+        left: 25px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        position: relative;
+        left: 0;
     }
 }
