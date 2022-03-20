@@ -559,6 +559,9 @@ footer{
     .div__us p{
         width: auto;
     }
+    .div__contact{
+        align-items: center;
+    }
     .catalogue__item{
         display: flex;
         justify-content: center;
@@ -566,6 +569,7 @@ footer{
     .catalogue__description{
         width: 35rem;
     }
+
 }
 
 /* ANIMATIONS */
