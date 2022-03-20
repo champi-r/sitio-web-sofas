@@ -333,6 +333,9 @@ footer{
     font-size: 1.4em;
     font-family: var(--font-primary);
 }
+.form__contact textarea{
+    height: 15rem;
+}
 .form__contact input::placeholder,
 .form__contact textarea::placeholder{
     font-family: var(--font-primary);
