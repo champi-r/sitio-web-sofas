@@ -445,7 +445,7 @@ footer{
 }
 
 /* Medias Querys */
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     #header__bgImage{
         background-position-x: -230px;
     }
@@ -555,6 +555,16 @@ footer{
         position: relative;
         top: -2.5rem;
         left: 55%;
+    }
+    .div__us p{
+        width: auto;
+    }
+    .catalogue__item{
+        display: flex;
+        justify-content: center;
+    }
+    .catalogue__description{
+        width: 35rem;
     }
 }
 
