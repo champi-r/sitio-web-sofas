@@ -67,13 +67,27 @@ img{
 }
 
 /* HEADER */
-#header__bgImage{
-    height: 100vh;
-    background-image: url('../img/hero-image.jpg');
-    background-size: cover;
+#header__bgImage .navbar>.container-fluid,
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
 }
-
-/* MENU MOBILE */
+.navbar-nav{
+    align-items: center;
+}
+.navbar-light .navbar-toggler{
+    border-color: transparent
+}
+.navbar-light .navbar-nav .nav-link{
+    font-family: var(--font-secondary);
+    font-size: 2em;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: var(--principal);
+}
+.navbar-toggler i{
+    font-size: 2.5rem;
+}
+/* MENU MOBILE
 .nav__mobile,
 .nav__mobile input,
 .menu__mobile,
@@ -102,7 +116,7 @@ img{
     text-transform: capitalize;
     font-weight: 600;
     color: var(--principal);
-}
+} */
 .header__content{
     justify-content: end;
     align-items: center;
@@ -112,9 +126,7 @@ img{
     position: relative;
     margin-right: 15rem;
 }
-.header__socials i,
-.nav__mobile label i,
-.nav__mobile--pages label i{
+.header__socials i{
     font-size: 2.3em;
     padding: .9rem;
     color: var(--secondary);
