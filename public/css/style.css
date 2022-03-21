@@ -121,6 +121,10 @@ img{
     justify-content: end;
     align-items: center;
     margin: 13rem 3rem;
+    position: absolute;
+    z-index: 2;
+    right: 1.5vh;
+    bottom: 17vh;
 }
 .header__logo{
     position: relative;
