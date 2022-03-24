@@ -65,11 +65,18 @@ img{
 .text-center{
     text-align: center;
 }
+.row{
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
 
 /* HEADER */
 #header__bgImage .navbar>.container-fluid,
 .navbar-expand-lg .navbar-collapse{
     justify-content: center;
+}
+#navbarNavPage{
+    justify-content: flex-end;
 }
 .navbar-nav{
     align-items: center;
@@ -83,6 +90,9 @@ img{
     text-transform: capitalize;
     font-weight: 600;
     color: var(--principal);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: var(--secondary);
 }
 .navbar-toggler i{
     font-size: 2.5rem;
@@ -252,40 +262,6 @@ main.principal{
     font-weight: 500;
 }
 
-/* PAGES */
-.nav__pages{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-height: 8vh;
-    align-items: center;
-    background-color: var(--nav-color);
-}
-.nav__pages picture{
-    /* height: 9.3rem; */
-    width: 17rem;
-    padding: 1rem;
-    margin: 0 3rem;
-    align-content: center; 
-}
-.nav__pages ul{
-    flex-basis: 40%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.nav__pages--links:hover{
-    transform: scale(1.3);
-}
-.nav__pages--links a{
-    font-family: var(--font-secondary);
-    font-size: 1.8em;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: var(--principal);
-}
-.nav__mobile--pages{
-    display: none;
-}
-
 /* CONTACT PAGE */
 .bg-contact{
     background-image: url('../img/contact-image.jpg');
@@ -444,6 +420,11 @@ main.principal{
     font-size: 1.9em;
     text-transform: uppercase;
 }
+.btn-page:hover,
+.form__contact button:hover{
+    background-color: var(--secondary);
+    color: var(--nav-color);
+}
 
 /* Medias Querys */
 @media (max-width: 479px) {
@@ -505,31 +486,11 @@ main.principal{
     .image--six{
         order: 12;
     }
+    .footer__logo img{
+        width: 80%;
+    }
     footer div.row{
         text-align: center;
-    }
-
-    .nav__pages{
-        display: none;
-    }
-    .nav__mobile--pages{
-        display: block;
-        justify-content: space-between;
-        padding: 0 3rem;
-        align-items: center;
-    }
-    .nav__mobile--pages img{
-        width: 13rem;
-    }
-    .nav__mobile--icon i{
-        font-size: 2.3em;
-        padding: .9rem;
-        color: var(--secondary);
-    }
-    .nav__mobile--pages label{
-        position: relative;
-        top: -2.5rem;
-        left: 55%;
     }
     .div__us p{
         width: auto;
@@ -544,7 +505,26 @@ main.principal{
     .catalogue__description{
         width: 35rem;
     }
-
+    .section--services{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 10vh);
+    }
+}
+@media (max-width: 768px) {
+    .header__content{
+        margin: 0;
+        bottom: 0;
+    }
+    .footer__logo img{
+        width: 35rem;
+        max-height: none;
+    }
+    footer div.row{
+        text-align: center;
+    }
+    .header__down{
+        display: none;
+    }
 }
 
 /* ANIMATIONS */
