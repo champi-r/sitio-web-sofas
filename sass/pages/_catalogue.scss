@@ -1,0 +1,55 @@
+.main__catalogue{
+    display: grid;
+    grid-template-columns: minmax(max-content, 1600px);
+    grid-template-rows: repeat(5, 60rem);
+    justify-content: center;
+    .title__page{
+        color: $bg-color;
+    }
+    .text__page{
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+}
+#item1{
+    background-image: url('../img/quadrat.jpg');
+}
+#item2{
+    background-image: url('../img/abra.jpg');
+}
+#item3{
+    background-image: url('../img/nuvole.jpg');
+}
+#item4{
+    background-image: url('../img/leger.jpg');
+}
+#item5{
+    background-image: url('../img/simplice.jpg');
+}
+.catalogue__item{
+    background-size: cover;
+    background-position: center center;
+}
+.catalogue__description{
+    background-color: rgb(64, 121, 140 / 75%);
+    width: 40rem;
+    height: 45rem;
+    margin: 3rem;
+    padding: 2rem;
+    color: $bg-color;
+}
+.btn-page{
+    display: block;
+    text-align: center;
+    padding: .5rem 2rem;
+    margin: 5rem 3rem;
+    background-color: $principal;
+    color: $bg-color;
+    font-family: $font-secondary;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    &:hover, .form__contact button:hover{
+        background-color: $secondary;
+        color: $nav-color;
+    }
+}

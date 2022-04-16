@@ -1,0 +1,99 @@
+@media (max-width: 479px) {
+    .header__content{
+        flex-flow: column;
+    }
+    .header__logo,
+    .header__socials{
+        display: none;
+    }
+    main.principal{
+        margin-top: 3rem;
+        padding: 0 .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .h1__title{
+        padding: .5rem;
+        margin: 3rem 0;
+        order: 1;
+        font-size: 1.6em;
+    }
+    .image--one{    
+        order: 2;
+    }
+    .h3__phrase--one{
+        order: 3;
+        align-self: end;
+    }
+    .image--two{
+        order: 4;
+    }
+    .h3__contact{
+        order: 5;
+        transform: rotate(0);
+    }
+    .image--three{
+        order: 6;
+    }
+    .h3__phrase--two{
+        order: 7;
+        align-self: start;
+    }
+    .image--four{
+        order: 8;
+        top: 0;
+    } 
+    .h3__phrase--three{
+        order: 9;
+        align-self: flex-end;
+    }
+    .image--five{
+        order: 10;
+    }
+    .h3__phrase--four{
+        order: 11;
+        align-self: start;
+    }
+    .image--six{
+        order: 12;
+    }
+    .footer__logo img{
+        width: 80%;
+    }
+    footer div.row{
+        text-align: center;
+    }
+    .div__us p{
+        width: auto;
+    }
+    .div__contact{
+        align-items: center;
+    }
+    .catalogue__item{
+        display: flex;
+        justify-content: center;
+    }
+    .catalogue__description{
+        width: 35rem;
+    }
+    .section--services{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 10vh);
+    }
+}
+@media (max-width: 768px) {
+    .header__content{
+        margin: 0;
+        bottom: 0;
+    }
+    .footer__logo img{
+        width: 35rem;
+        max-height: none;
+    }
+    footer div.row{
+        text-align: center;
+    }
+    .header__down{
+        display: none;
+    }
+}

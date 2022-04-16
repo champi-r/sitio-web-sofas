@@ -1,0 +1,56 @@
+/* RESET */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GLOBALS */
+html{
+    font-size: 62.5%;
+    font-family: $font-primary;
+    color: $principal;
+}
+body{
+    background-color: $bg-color;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+
+/* UTILS */
+.flex-row{
+    display: flex;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    padding: 1.5rem;
+    margin-top: 4rem;
+}

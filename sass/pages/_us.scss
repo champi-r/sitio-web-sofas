@@ -1,0 +1,21 @@
+.bg-us{
+    background-image: url('../img/bg-virender-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem 3rem;
+}
+.div__us{
+    align-items: end;
+    .title__page{
+        align-self: center;
+    }
+    p{
+        width: 60vh;
+        &:first-child{
+            margin-top: 5rem;
+        }
+        &:last-child{
+            margin-bottom: 5rem;
+        }
+    }
+}

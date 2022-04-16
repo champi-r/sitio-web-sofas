@@ -1,0 +1,69 @@
+.bg-contact{
+    background-image: url('../img/contact-image.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 1rem 3rem;
+}
+.div__contact{
+    height: 100%;
+    align-items: flex-end;
+}
+.title__page{
+    margin: 3rem 0;
+    font-family: $font-tertiary;
+    font-size: 3em;
+    font-weight: 400;
+    color: $principal;
+}
+.subtitle__page{
+    margin-bottom: 5rem;
+    font-family: $font-primary;
+    font-size: 2em;
+}
+.text__page{
+    font-family: $font-primary;
+    font-size: 1.7em;
+    font-weight: 600;
+    margin: 1rem 0;
+    
+}
+.form__contact{
+    width: 45vh;
+    input{
+        margin: 1rem 0;
+        padding: .5rem 2rem;
+        width: 100%;
+        border-radius: .5rem;
+        border-width: 0;
+        background-color: #C4C4C4;
+        color: $principal;
+        font-size: 1.4em;
+        font-family: $font-primary;
+        &::placeholder{
+            font-family: $font-primary;
+            color: $bg-color;
+        }
+    }
+    textarea{
+        @extend input;
+        height: 15rem;
+    }
+}
+
+.form__contact input::placeholder,
+.form__contact textarea::placeholder{
+    font-family: $font-primary;
+    color: $bg-color;
+}
+.form__contact button{
+    margin: 2.5rem 0;
+    padding: .5rem 2rem;
+    width: 100%;
+    border-radius: .5rem;
+    border-width: 0;
+    background-color: $principal;
+    color: $bg-color;
+    font-family: $font-secondary;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}

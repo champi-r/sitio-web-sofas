@@ -1,0 +1,35 @@
+@keyframes down_header {
+    from {
+        transform: translateY(0) scale(1.2)
+    }
+    to {
+        transform: translateY(10px)
+    }
+}
+@keyframes crazyicon{
+    0%{
+        transform: rotate(-150deg);
+        position: relative;
+        left: 100px;
+    }
+    25%{
+        transform: rotate(-200deg);
+        position: relative;
+        left: 75px;
+    }
+    50%{
+        transform: rotate(-250deg);
+        position: relative;
+        left: 50px;
+    }
+    75%{
+        transform: rotate(-300deg);
+        position: relative;
+        left: 25px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        position: relative;
+        left: 0;
+    }
+}

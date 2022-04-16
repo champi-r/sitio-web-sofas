@@ -1,0 +1,33 @@
+.footer__logo img{
+    max-height: 15rem;
+}
+.footer__title{
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    padding-left: 2rem;
+}
+.footer__dates,
+.footer__links,
+.footer__socials{
+    span{
+        color: $principal;
+        font-size: 1.5em;
+        margin-left: .8rem;
+    }
+    i{
+        font-size: 2em;
+        color: $secondary;
+        margin-bottom: 2rem;
+    }
+}
+.footer__copyright{
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+    color: $copyright-color;
+    span{
+        color: $principal;
+        font-weight: 500;
+    }
+}

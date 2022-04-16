@@ -1,1 +1,489 @@
+/* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;600&family=Mukta+Vaani:wght@200;400;600&family=Syncopate:wght@400;700&display=swap");
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* GLOBALS */
+html {
+  font-size: 62.5%;
+  font-family: "Mukta Vaani", sans-serif;
+  color: #1f363d; }
+
+body {
+  background-color: #f2f3f2;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  width: 100%; }
+
+/* UTILS */
+.flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.row {
+  padding: 1.5rem;
+  margin-top: 4rem; }
+
+@keyframes down_header {
+  from {
+    transform: translateY(0) scale(1.2); }
+  to {
+    transform: translateY(10px); } }
+
+@keyframes crazyicon {
+  0% {
+    transform: rotate(-150deg);
+    position: relative;
+    left: 100px; }
+  25% {
+    transform: rotate(-200deg);
+    position: relative;
+    left: 75px; }
+  50% {
+    transform: rotate(-250deg);
+    position: relative;
+    left: 50px; }
+  75% {
+    transform: rotate(-300deg);
+    position: relative;
+    left: 25px; }
+  100% {
+    transform: rotate(-360deg);
+    position: relative;
+    left: 0; } }
+
+/* Partials */
+#header__bgImage .navbar > .container-fluid,
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center; }
+
+#navbarNavPage {
+  justify-content: flex-end; }
+
+.navbar-nav {
+  align-items: center; }
+
+.navbar-light .navbar-toggler {
+  border-color: transparent; }
+  .navbar-light .navbar-toggler i {
+    font-size: 2.5rem; }
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Dosis", sans-serif;
+  font-size: 2em;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #1f363d; }
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #40798C; }
+
+.header__content {
+  justify-content: end;
+  align-items: center;
+  margin: 13rem 3rem;
+  position: absolute;
+  z-index: 2;
+  right: 1.5vh;
+  bottom: 17vh; }
+
+.header__logo {
+  position: relative;
+  margin-right: 15rem; }
+
+.header__socials i {
+  font-size: 2.3em;
+  padding: .9rem;
+  color: #40798C; }
+  .header__socials i:hover {
+    transform: scale(1.5); }
+
+.header__socials .fa-instagram {
+  animation-name: crazyicon;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 2.5s; }
+
+.header__socials .fa-facebook-f {
+  animation-name: crazyicon;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 3s; }
+
+.header__socials .fa-twitter {
+  animation-name: crazyicon;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 3.5s; }
+
+.header__socials .fa-whatsapp {
+  animation-name: crazyicon;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-duration: 4s; }
+
+.header__down {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 50%;
+  margin-left: -2.025rem;
+  z-index: 2; }
+  .header__down i {
+    font-size: 3em;
+    padding: .9rem;
+    color: #1f363d;
+    animation-name: down_header;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: .8s; }
+
+.footer__logo img {
+  max-height: 15rem; }
+
+.footer__title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: .5rem;
+  padding-left: 2rem; }
+
+.footer__dates span,
+.footer__links span,
+.footer__socials span {
+  color: #1f363d;
+  font-size: 1.5em;
+  margin-left: .8rem; }
+
+.footer__dates i,
+.footer__links i,
+.footer__socials i {
+  font-size: 2em;
+  color: #40798C;
+  margin-bottom: 2rem; }
+
+.footer__copyright {
+  font-size: 1.2em;
+  margin-bottom: 1rem;
+  color: #70a9a1; }
+  .footer__copyright span {
+    color: #1f363d;
+    font-weight: 500; }
+
+/* Pages */
+main.principal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: .5fr .1fr 1fr .75fr .1fr 1fr .75fr;
+  grid-gap: 1.5rem 3rem;
+  align-items: center;
+  margin-bottom: 5rem; }
+
+.h1__title {
+  grid-column: 1/5;
+  text-align: center;
+  align-self: center;
+  font-size: 2.4em;
+  color: #1f363d; }
+
+.h3__phrase--one {
+  grid-column: 1/5;
+  text-align: end;
+  font-size: 2.2em; }
+
+.image--one {
+  grid-column: 1/3; }
+
+.image--two {
+  grid-column: 3/5; }
+
+.h3__contact {
+  grid-column: 1/2;
+  font-family: "Syncopate", sans-serif;
+  font-size: 1.6em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1f363d;
+  transform: rotate(270deg);
+  text-align: right;
+  width: 2rem; }
+
+.image--three {
+  grid-column: 2/4; }
+
+.h3__phrase--two {
+  grid-column: 4/5;
+  text-align: end;
+  font-size: 2.2em; }
+
+.h3__phrase--three {
+  grid-column: 1/5;
+  font-size: 2.2em; }
+
+.image--four {
+  grid-column: 1/3;
+  position: relative;
+  top: 13rem; }
+
+.image--five {
+  grid-column: 3/5; }
+
+.h3__phrase--four {
+  grid-column: 1/3;
+  align-self: end;
+  font-size: 2.2em; }
+
+.image--six {
+  grid-column: 3/5; }
+
+.bg-us {
+  background-image: url("../img/bg-virender-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 1rem 3rem; }
+
+.div__us {
+  align-items: end; }
+  .div__us .title__page {
+    align-self: center; }
+  .div__us p {
+    width: 60vh; }
+    .div__us p:first-child {
+      margin-top: 5rem; }
+    .div__us p:last-child {
+      margin-bottom: 5rem; }
+
+.bg-services {
+  background-image: url("../img/virender-singh--unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 1rem 3rem; }
+
+.table-grid {
+  padding: 5rem; }
+
+.section--services {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  grid-template-rows: 75px 75px 75px;
+  text-align: center;
+  align-items: center; }
+
+.main__catalogue {
+  display: grid;
+  grid-template-columns: minmax(max-content, 1600px);
+  grid-template-rows: repeat(5, 60rem);
+  justify-content: center; }
+  .main__catalogue .title__page {
+    color: #f2f3f2; }
+  .main__catalogue .text__page {
+    font-size: 1.3em;
+    font-weight: 400; }
+
+#item1 {
+  background-image: url("../img/quadrat.jpg"); }
+
+#item2 {
+  background-image: url("../img/abra.jpg"); }
+
+#item3 {
+  background-image: url("../img/nuvole.jpg"); }
+
+#item4 {
+  background-image: url("../img/leger.jpg"); }
+
+#item5 {
+  background-image: url("../img/simplice.jpg"); }
+
+.catalogue__item {
+  background-size: cover;
+  background-position: center center; }
+
+.catalogue__description {
+  background-color: #407902;
+  width: 40rem;
+  height: 45rem;
+  margin: 3rem;
+  padding: 2rem;
+  color: #f2f3f2; }
+
+.btn-page {
+  display: block;
+  text-align: center;
+  padding: .5rem 2rem;
+  margin: 5rem 3rem;
+  background-color: #1f363d;
+  color: #f2f3f2;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.9em;
+  text-transform: uppercase; }
+  .btn-page:hover, .btn-page .form__contact button:hover {
+    background-color: #40798C;
+    color: #E5E5E5; }
+
+.bg-contact {
+  background-image: url("../img/contact-image.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 1rem 3rem; }
+
+.div__contact {
+  height: 100%;
+  align-items: flex-end; }
+
+.title__page {
+  margin: 3rem 0;
+  font-family: "Syncopate", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #1f363d; }
+
+.subtitle__page {
+  margin-bottom: 5rem;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 2em; }
+
+.text__page {
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin: 1rem 0; }
+
+.form__contact {
+  width: 45vh; }
+  .form__contact input, .form__contact textarea {
+    margin: 1rem 0;
+    padding: .5rem 2rem;
+    width: 100%;
+    border-radius: .5rem;
+    border-width: 0;
+    background-color: #C4C4C4;
+    color: #1f363d;
+    font-size: 1.4em;
+    font-family: "Mukta Vaani", sans-serif; }
+    .form__contact input::placeholder, .form__contact textarea::placeholder {
+      font-family: "Mukta Vaani", sans-serif;
+      color: #f2f3f2; }
+  .form__contact textarea {
+    height: 15rem; }
+
+.form__contact input::placeholder, .form__contact textarea::placeholder,
+.form__contact textarea::placeholder {
+  font-family: "Mukta Vaani", sans-serif;
+  color: #f2f3f2; }
+
+.form__contact button {
+  margin: 2.5rem 0;
+  padding: .5rem 2rem;
+  width: 100%;
+  border-radius: .5rem;
+  border-width: 0;
+  background-color: #1f363d;
+  color: #f2f3f2;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase; }
+
+/* Medias Querys */
+@media (max-width: 479px) {
+  .header__content {
+    flex-flow: column; }
+  .header__logo,
+  .header__socials {
+    display: none; }
+  main.principal {
+    margin-top: 3rem;
+    padding: 0 .5rem;
+    display: flex;
+    flex-direction: column; }
+  .h1__title {
+    padding: .5rem;
+    margin: 3rem 0;
+    order: 1;
+    font-size: 1.6em; }
+  .image--one {
+    order: 2; }
+  .h3__phrase--one {
+    order: 3;
+    align-self: end; }
+  .image--two {
+    order: 4; }
+  .h3__contact {
+    order: 5;
+    transform: rotate(0); }
+  .image--three {
+    order: 6; }
+  .h3__phrase--two {
+    order: 7;
+    align-self: start; }
+  .image--four {
+    order: 8;
+    top: 0; }
+  .h3__phrase--three {
+    order: 9;
+    align-self: flex-end; }
+  .image--five {
+    order: 10; }
+  .h3__phrase--four {
+    order: 11;
+    align-self: start; }
+  .image--six {
+    order: 12; }
+  .footer__logo img {
+    width: 80%; }
+  footer div.row {
+    text-align: center; }
+  .div__us p {
+    width: auto; }
+  .div__contact {
+    align-items: center; }
+  .catalogue__item {
+    display: flex;
+    justify-content: center; }
+  .catalogue__description {
+    width: 35rem; }
+  .section--services {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 10vh); } }
+
+@media (max-width: 768px) {
+  .header__content {
+    margin: 0;
+    bottom: 0; }
+  .footer__logo img {
+    width: 35rem;
+    max-height: none; }
+  footer div.row {
+    text-align: center; }
+  .header__down {
+    display: none; } }
