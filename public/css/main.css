@@ -178,15 +178,16 @@ img {
   margin-bottom: .5rem;
   padding-left: 2rem; }
 
-.footer__dates span,
-.footer__links span,
+.footer__dates,
+.footer__links {
+  color: #1f363d;
+  font-size: 1.5em; }
+
 .footer__socials span {
   color: #1f363d;
   font-size: 1.5em;
   margin-left: .8rem; }
 
-.footer__dates i,
-.footer__links i,
 .footer__socials i {
   font-size: 2em;
   color: #40798C;
@@ -330,7 +331,7 @@ main.principal {
   background-position: center center; }
 
 .catalogue__description {
-  background-color: #407902;
+  background-color: #40798cbf;
   width: 40rem;
   height: 45rem;
   margin: 3rem;
@@ -396,11 +397,6 @@ main.principal {
       color: #f2f3f2; }
   .form__contact textarea {
     height: 15rem; }
-
-.form__contact input::placeholder, .form__contact textarea::placeholder,
-.form__contact textarea::placeholder {
-  font-family: "Mukta Vaani", sans-serif;
-  color: #f2f3f2; }
 
 .form__contact button {
   margin: 2.5rem 0;

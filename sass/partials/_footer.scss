@@ -9,7 +9,10 @@
     padding-left: 2rem;
 }
 .footer__dates,
-.footer__links,
+.footer__links{
+    color: $principal;
+    font-size: 1.5em;
+}
 .footer__socials{
     span{
         color: $principal;

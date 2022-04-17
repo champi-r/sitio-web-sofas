@@ -49,12 +49,6 @@
         height: 15rem;
     }
 }
-
-.form__contact input::placeholder,
-.form__contact textarea::placeholder{
-    font-family: $font-primary;
-    color: $bg-color;
-}
 .form__contact button{
     margin: 2.5rem 0;
     padding: .5rem 2rem;
