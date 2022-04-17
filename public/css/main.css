@@ -312,19 +312,19 @@ main.principal {
     font-weight: 400; }
 
 #item1 {
-  background-image: url("../img/quadrat.jpg"); }
+  background-image: url("../img/item1.jpg"); }
 
 #item2 {
-  background-image: url("../img/abra.jpg"); }
+  background-image: url("../img/item2.jpg"); }
 
 #item3 {
-  background-image: url("../img/nuvole.jpg"); }
+  background-image: url("../img/item3.jpg"); }
 
 #item4 {
-  background-image: url("../img/leger.jpg"); }
+  background-image: url("../img/item4.jpg"); }
 
 #item5 {
-  background-image: url("../img/simplice.jpg"); }
+  background-image: url("../img/item5.jpg"); }
 
 .catalogue__item {
   background-size: cover;
