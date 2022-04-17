@@ -11,21 +11,10 @@
         font-weight: 400;
     }
 }
-
-#item1{
-    background-image: url('../img/quadrat.jpg');
-}
-#item2{
-    background-image: url('../img/abra.jpg');
-}
-#item3{
-    background-image: url('../img/nuvole.jpg');
-}
-#item4{
-    background-image: url('../img/leger.jpg');
-}
-#item5{
-    background-image: url('../img/simplice.jpg');
+@each $image, $value in $images {
+    ##{$image}{
+        background-image: url('../img/#{$image}.jpg');
+    }
 }
 .catalogue__item{
     background-size: cover;

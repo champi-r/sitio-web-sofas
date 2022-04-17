@@ -311,20 +311,20 @@ main.principal {
     font-size: 1.3em;
     font-weight: 400; }
 
-#item1 {
-  background-image: url("../img/item1.jpg"); }
+#quadrat {
+  background-image: url("../img/quadrat.jpg"); }
 
-#item2 {
-  background-image: url("../img/item2.jpg"); }
+#abra {
+  background-image: url("../img/abra.jpg"); }
 
-#item3 {
-  background-image: url("../img/item3.jpg"); }
+#nuvole {
+  background-image: url("../img/nuvole.jpg"); }
 
-#item4 {
-  background-image: url("../img/item4.jpg"); }
+#leger {
+  background-image: url("../img/leger.jpg"); }
 
-#item5 {
-  background-image: url("../img/item5.jpg"); }
+#simplice {
+  background-image: url("../img/simplice.jpg"); }
 
 .catalogue__item {
   background-size: cover;
