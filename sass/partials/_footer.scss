@@ -3,9 +3,6 @@
 }
 .footer__title{
     @include font($font-secondary, 2em, 600);
-    /*font-family: $font-secondary;
-    font-size: 2em;
-    font-weight: 600;*/
     margin-bottom: .5rem;
     padding-left: 2rem;
 }
