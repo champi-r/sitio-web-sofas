@@ -12,12 +12,21 @@
     }
 }
 
-@for $i from 1 through 5{
-    #item#{$i}{
-        background-image: url('../img/item#{$i}.jpg');
-    }
+#item1{
+    background-image: url('../img/quadrat.jpg');
 }
-
+#item2{
+    background-image: url('../img/abra.jpg');
+}
+#item3{
+    background-image: url('../img/nuvole.jpg');
+}
+#item4{
+    background-image: url('../img/leger.jpg');
+}
+#item5{
+    background-image: url('../img/simplice.jpg');
+}
 .catalogue__item{
     background-size: cover;
     background-position: center center;
