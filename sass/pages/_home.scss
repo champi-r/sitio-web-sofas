@@ -10,13 +10,16 @@ main.principal{
     grid-column: 1/5;
     text-align: center;
     align-self: center;
-    font-size: 2.4em;
+    font-size: 3.4em;
     color: $principal;
 }
 .h3__phrase--one{
     grid-column: 1/5;
     text-align: end;
-    font-size: 2.2em;
+    font-size: 4.2em;
+    background: -webkit-linear-gradient(#70a9a1, #e5e5e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .image--one{
     grid-column: 1/3;
@@ -39,11 +42,17 @@ main.principal{
 .h3__phrase--two{
     grid-column: 4/5;
     text-align: end;
-    font-size: 2.2em;
+    font-size: 4.2em;
+    background: -webkit-linear-gradient(#e5e5e5, #70a9a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .h3__phrase--three{
     grid-column: 1/5;
-    font-size: 2.2em;
+    font-size: 4.2em;
+    background: -webkit-linear-gradient(#70a9a1, #e5e5e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .image--four{
     grid-column: 1/3;
@@ -56,7 +65,10 @@ main.principal{
 .h3__phrase--four{
     grid-column: 1/3;
     align-self: end;
-    font-size: 2.2em;
+    font-size: 4.2em;
+    background: -webkit-linear-gradient(#e5e5e5, #70a9a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .image--six{
     grid-column: 3/5;
