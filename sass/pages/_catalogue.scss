@@ -22,8 +22,7 @@
 }
 .catalogue__description{
     background-color: #40798cbf;
-    width: 40rem;
-    height: 45rem;
+    @include sizes(40rem, 45rem);
     margin: 3rem;
     padding: 2rem;
     color: $bg-color;
