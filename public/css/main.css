@@ -102,8 +102,8 @@ img {
 .navbar-light .navbar-nav .nav-link {
   font-family: "Dosis", sans-serif;
   font-size: 2em;
-  text-transform: capitalize;
   font-weight: 600;
+  text-transform: capitalize;
   color: #1f363d; }
 
 .navbar-light .navbar-nav .nav-link.active,
@@ -173,9 +173,12 @@ img {
   max-height: 15rem; }
 
 .footer__title {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 2em;
   font-weight: 600;
+  /*font-family: $font-secondary;
+    font-size: 2em;
+    font-weight: 600;*/
   margin-bottom: .5rem;
   padding-left: 2rem; }
 
@@ -348,6 +351,7 @@ main.principal {
   color: #f2f3f2;
   font-family: "Dosis", sans-serif;
   font-size: 1.9em;
+  font-weight: normal;
   text-transform: uppercase; }
   .btn-page:hover, .btn-page .form__contact button:hover {
     background-color: #40798C;
@@ -373,7 +377,8 @@ main.principal {
 .subtitle__page {
   margin-bottom: 5rem;
   font-family: "Mukta Vaani", sans-serif;
-  font-size: 2em; }
+  font-size: 2em;
+  font-weight: normal; }
 
 .text__page {
   font-family: "Mukta Vaani", sans-serif;
@@ -391,8 +396,9 @@ main.principal {
     border-width: 0;
     background-color: #C4C4C4;
     color: #1f363d;
+    font-family: "Mukta Vaani", sans-serif;
     font-size: 1.4em;
-    font-family: "Mukta Vaani", sans-serif; }
+    font-weight: normal; }
     .form__contact input::placeholder, .form__contact textarea::placeholder {
       font-family: "Mukta Vaani", sans-serif;
       color: #f2f3f2; }
@@ -409,6 +415,7 @@ main.principal {
   color: #f2f3f2;
   font-family: "Dosis", sans-serif;
   font-size: 1.6em;
+  font-weight: normal;
   text-transform: uppercase; }
 
 /* Medias Querys */

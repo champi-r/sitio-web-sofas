@@ -2,9 +2,10 @@
     max-height: 15rem;
 }
 .footer__title{
-    font-family: 'Dosis', sans-serif;
+    @include font($font-secondary, 2em, 600);
+    /*font-family: $font-secondary;
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 600;*/
     margin-bottom: .5rem;
     padding-left: 2rem;
 }

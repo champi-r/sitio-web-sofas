@@ -34,8 +34,7 @@
     margin: 5rem 3rem;
     background-color: $principal;
     color: $bg-color;
-    font-family: $font-secondary;
-    font-size: 1.9em;
+    @include font($font-secondary, 1.9em, normal);
     text-transform: uppercase;
     &:hover, .form__contact button:hover{
         background-color: $secondary;

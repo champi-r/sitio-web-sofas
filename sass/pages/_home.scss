@@ -26,9 +26,7 @@ main.principal{
 }
 .h3__contact{
     grid-column: 1/2;
-    font-family: $font-tertiary;
-    font-size: 1.6em;
-    font-weight: 400;
+    @include font($font-tertiary, 1.6em, 400);
     text-transform: uppercase;
     color: $principal;
     transform: rotate(270deg);

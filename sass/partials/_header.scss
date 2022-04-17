@@ -17,10 +17,8 @@
     }
     .navbar-nav{
         .nav-link{
-            font-family: $font-secondary;
-            font-size: 2em;
+            @include font($font-secondary, 2em, 600);
             text-transform: capitalize;
-            font-weight: 600;
             color: $principal;
         }
         .nav-link.active,
