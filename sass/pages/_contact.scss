@@ -3,10 +3,12 @@
     background-size: cover;
     background-position: center center;
     padding: 1rem 3rem;
+    min-height: 70vh;
 }
 .div__contact{
     height: 100%;
     align-items: flex-end;
+    justify-content: center;
 }
 .title__page{
     margin: 3rem 0;

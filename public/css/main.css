@@ -55,6 +55,10 @@ img {
   padding: 1.5rem;
   margin-top: 4rem; }
 
+.move-right {
+  position: absolute;
+  right: 0; }
+
 @keyframes down_header {
   from {
     transform: translateY(0) scale(1.2); }
@@ -288,9 +292,12 @@ main.principal {
   background-image: url("../img/bg-virender-unsplash.jpg");
   background-size: cover;
   background-position: center center;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  min-height: 70vh; }
 
 .div__us {
+  height: 100%;
+  justify-content: center;
   align-items: end; }
   .div__us .title__page {
     align-self: center; }
@@ -305,7 +312,9 @@ main.principal {
   background-image: url("../img/virender-singh--unsplash.jpg");
   background-size: cover;
   background-position: center center;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  min-height: 70vh;
+  justify-content: center; }
 
 .table-grid {
   padding: 5rem; }
@@ -327,6 +336,9 @@ main.principal {
   .main__catalogue .text__page {
     font-size: 1.3em;
     font-weight: 400; }
+    .main__catalogue .text__page::before {
+      content: "-";
+      margin-right: 0.5rem; }
 
 #quadrat {
   background-image: url("../img/quadrat.jpg"); }
@@ -345,7 +357,8 @@ main.principal {
 
 .catalogue__item {
   background-size: cover;
-  background-position: center center; }
+  background-position: center center;
+  position: relative; }
 
 .catalogue__description {
   background-color: #40798cbf;
@@ -374,11 +387,13 @@ main.principal {
   background-image: url("../img/contact-image.jpg");
   background-size: cover;
   background-position: center center;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  min-height: 70vh; }
 
 .div__contact {
   height: 100%;
-  align-items: flex-end; }
+  align-items: flex-end;
+  justify-content: center; }
 
 .title__page {
   margin: 3rem 0;
@@ -455,8 +470,9 @@ main.principal {
     align-self: end; }
   .image--two {
     order: 4; }
+  .a__contact {
+    order: 5; }
   .h3__contact {
-    order: 5;
     transform: rotate(0); }
   .image--three {
     order: 6; }
@@ -491,7 +507,11 @@ main.principal {
     width: 35rem; }
   .section--services {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 10vh); } }
+    grid-template-rows: repeat(6, 10vh); }
+  .btn-page {
+    margin: 2rem 1rem; }
+  .bg-contact {
+    padding: 0; } }
 
 @media (max-width: 768px) {
   .header__content {

@@ -9,6 +9,10 @@
     .text__page{
         font-size: 1.3em;
         font-weight: 400;
+        &::before{
+            content: "-";
+            margin-right: 0.5rem;
+        }
     }
 }
 @each $image, $value in $images {
@@ -19,6 +23,7 @@
 .catalogue__item{
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 .catalogue__description{
     background-color: #40798cbf;

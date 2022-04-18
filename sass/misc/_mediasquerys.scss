@@ -28,8 +28,10 @@
     .image--two{
         order: 4;
     }
-    .h3__contact{
+    .a__contact{
         order: 5;
+    }
+    .h3__contact{
         transform: rotate(0);
     }
     .image--three{
@@ -79,6 +81,12 @@
     .section--services{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 10vh);
+    }
+    .btn-page{
+        margin: 2rem 1rem;
+    }
+    .bg-contact{
+        padding: 0;
     }
 }
 @media (max-width: 768px) {
